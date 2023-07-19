@@ -1,0 +1,34 @@
+form {
+    width: 100%;
+    .form__input {
+        border: 1px solid lightgray;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 50px;
+        .input__box {
+            width: 100%;
+            padding: 10px 20px;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            font-size: 14px;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .input__btn {
+            background-color: transparent;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            gap: 10px;
+            .addTaskIcon {
+                font-size: 20px;
+            }
+        }
+    }
+}

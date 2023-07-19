@@ -1,0 +1,49 @@
+.todos__nothing {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 2.5rem 4rem;
+    border-radius: 20px;
+    h1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 22px;
+        gap: 10px;
+        .checkIcon {
+            font-size: 50px;
+        }
+    }
+}
+
+.todos__total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    h5 {
+        font-size: 15px;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 15px;
+        width: 100%;
+        height: 1px;
+        background: #403f3f;
+    }
+}
+
+.todos__lists {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+    li {
+        list-style: none;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,68 @@
+.todoItem {
+    padding: 1rem 0;
+    border-radius: 10px;
+    background: rgb(44, 42, 42);
+    width: 100%;
+    margin-bottom: 5px;
+    cursor: pointer;
+    .todoItem__edit {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        .input {
+            width: 100%;
+            padding: 10px 15px;
+            border-radius: 10px;
+            border: none;
+            margin-left: 10px;
+        }
+        button {
+            padding: 10px;
+            color: aquamarine;
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    }
+    .todoItem__status {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 10px;
+        .todoItem__text {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 16px;
+            padding-left: 10px;
+            cursor: pointer;
+            .checkbox {
+            }
+        }
+        .todoItem__update {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            button {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                background: transparent;
+                border: none;
+                cursor: pointer;
+                font-size: 14px;
+                font-family: 'Plus Jakarta Sans', sans-serif;
+                &:last-child {
+                    color: rgb(242, 73, 73);
+                }
+                .updateIcon {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+.todoItem__completed {
+    opacity: 0.5;
+}
